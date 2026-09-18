@@ -4,3 +4,4 @@ temp_render.pdf
 validate_tags.py
 build_site.py
 make_pdf.py
+update_site_v2.py
