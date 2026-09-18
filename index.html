@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
+  <meta name="description" content="釜山極致山海巡禮・5天4夜深度自由行實戰指南。穿韓服漫步甘川彩繪山城、國際市場挑選莫代爾四季棉被抽真空、東釜山Skyline Luge斜坡滑車飆速、札嘎其魚市場推薦良心攤位現挑帝王蟹海鮮大餐。">
+  <title>釜山極致山海巡禮・5天4夜深度遊行程規劃與實景路引指南 | Busan 5D4N Field Travel Guide</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            busan: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#082f49',
+            },
+            kr: {
+              line1: '#F05A28', // 釜山地鐵 1 號線橘紅
+              line2: '#3CB44A', // 釜山地鐵 2 號線綠色
+              line3: '#B58500', // 釜山地鐵 3 號線棕黃
+              line4: '#2F6399', // 釜山地鐵 4 號線藍色
+              donghae: '#0054A6', // 東海線深藍
+              bgl: '#782F8E',     // 釜山金海輕軌紫色
+              signBlue: '#005BAC' // 韓國道路指示牌深藍
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+    
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans TC', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .glass-nav {
+      background: rgba(8, 47, 73, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .hero-pattern {
+      background-color: #0c4a6e;
+      background-image: radial-gradient(rgba(56, 189, 248, 0.25) 1px, transparent 0);
+      background-size: 26px 26px;
+    }
+
+    /* 韓國實景道路牌風格樣式 */
+    .kr-street-sign {
+      background-color: #005bac;
+      color: #ffffff;
+      font-family: 'Plus Jakarta Sans', 'Noto Sans KR', sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 6px;
+      padding: 2px 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1.5px solid #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+    }
+
+    .img-box {
+      background-color: #e2e8f0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .img-box img {
+      transition: transform 0.45s ease, opacity 0.3s ease;
+    }
+    
+    .img-box:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-transition {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-transition:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px -5px rgba(2, 132, 199, 0.12), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-sky-500 selection:text-white pb-16 sm:pb-0">
+
+  <!-- ==================== 頂部導航列 ==================== -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-sky-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <span class="text-2xl sm:text-3xl transform group-hover:scale-110 transition-transform">🌊</span>
+        <div>
+          <div class="font-black text-base sm:text-lg tracking-tight bg-gradient-to-r from-sky-200 via-teal-200 to-amber-200 bg-clip-text text-transparent">
+            釜山極致山海巡禮 5D4N
+          </div>
+          <div class="text-[10px] text-sky-300 -mt-1 hidden sm:block">札嘎其活海鮮 ✕ 國際市場棉被 ✕ 甘川韓服 ✕ Skyline Luge 滑車</div>
+        </div>
+      </a>
+
+      <!-- 桌面導航 -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2 text-sm font-medium">
+        <a href="#overview" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-sky-900/80 transition-colors">行程總覽</a>
+        <a href="#decoder" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-sky-900/80 transition-colors">交通與路牌解碼</a>
+        <a href="#hotels" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-sky-900/80 transition-colors">住宿樞紐</a>
+        <a href="#itinerary" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-sky-900/80 transition-colors">每日實景動線</a>
+        <a href="#special-features" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-sky-900/80 transition-colors">四大專題攻略</a>
+        <a href="#food-guide" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-sky-900/80 transition-colors">美食全圖鑑</a>
+      </nav>
+
+      <!-- 下載 PDF 按鈕 -->
+      <div class="flex items-center gap-2">
+        <a href="./busan-travel-guide-2026.pdf" download="釜山極致山海巡禮_5天4夜深度遊實景手冊.pdf" 
+           class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-gradient-to-r from-sky-500 to-teal-500 text-white shadow-lg shadow-sky-500/25 hover:from-sky-600 hover:to-teal-600 transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span>下載離線 PDF 指南</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 英雄視窗 (Hero) ==================== -->
+  <section class="hero-pattern text-white pt-10 pb-14 sm:pt-16 sm:pb-20 border-b border-sky-950 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-950/90 border border-sky-400/40 text-sky-200 text-xs font-semibold mb-5 shadow-inner">
+        <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+        實地路引標準・順路零折返・四大願望全數滿載
+      </div>
+      <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4">
+        釜山極致山海巡禮・5天4夜
+        <span class="block mt-2 bg-gradient-to-r from-sky-300 via-teal-200 to-amber-300 bg-clip-text text-transparent">
+          深度自由行與實景路引全指南
+        </span>
+      </h1>
+      <p class="max-w-3xl mx-auto text-xs sm:text-base text-sky-100 mb-8 font-normal leading-relaxed">
+        專為追求高效率與道地風味的旅人量身打造：甘川洞精緻韓服登頂、國際市場親手挑選真空壓縮莫代爾棉被、東釜山 Skyline Luge 賽道重力狂飆、札嘎其魚市場內行推薦良心攤位現嚐帝王蟹與生魚片大餐！<br class="hidden sm:block">
+        每一站皆具備<strong>5-Point 實地路引要素（路線代碼、出口編號、實景路牌、韓文店名門牌、肉眼轉彎地標）</strong>，徹底杜絕原地迷航與走回頭路！
+      </p>
+
+      <!-- 4 大核心特色指標 -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
+        <div class="bg-sky-900/60 border border-sky-700/60 p-3.5 rounded-xl">
+          <div class="text-[10px] text-sky-300 uppercase font-bold tracking-wider">四大核心願望</div>
+          <div class="text-sm sm:text-base font-bold text-white mt-0.5">韓服 ✕ 棉被 ✕ 滑車 ✕ 魚市</div>
+          <div class="text-[11px] text-teal-300 mt-0.5">100% 官方門牌與實戰防坑教學</div>
+        </div>
+        <div class="bg-sky-900/60 border border-sky-700/60 p-3.5 rounded-xl">
+          <div class="text-[10px] text-sky-300 uppercase font-bold tracking-wider">地理順路佈局</div>
+          <div class="text-sm sm:text-base font-bold text-white mt-0.5">西南老城 ➔ 東釜山海線</div>
+          <div class="text-[11px] text-amber-300 mt-0.5">同天同軸線・絕無折返冤枉路</div>
+        </div>
+        <div class="bg-sky-900/60 border border-sky-700/60 p-3.5 rounded-xl">
+          <div class="text-[10px] text-sky-300 uppercase font-bold tracking-wider">餐飲雙軌制</div>
+          <div class="text-sm sm:text-base font-bold text-white mt-0.5">首選名店 ✕ 同區超強備案</div>
+          <div class="text-[11px] text-emerald-300 mt-0.5">排隊候位即刻無縫切換</div>
+        </div>
+        <div class="bg-sky-900/60 border border-sky-700/60 p-3.5 rounded-xl">
+          <div class="text-[10px] text-sky-300 uppercase font-bold tracking-wider">離線手冊同步</div>
+          <div class="text-sm sm:text-base font-bold text-white mt-0.5">全彩高解析 PDF 手冊</div>
+          <div class="text-[11px] text-sky-300 mt-0.5">免網路實景查驗・無痛打印</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 1. 交通與路標解碼器 ==================== -->
+  <section id="decoder" class="py-12 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-sky-600 mb-1">TRANSIT & SIGNAGE DECODER</h2>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">釜山地鐵與現場路牌實戰解碼器</h3>
+        <p class="text-slate-600 text-sm mt-2">在釜山街道穿梭，只要掌握地鐵數字代碼與藍底白字道路銘牌，即使不懂韓文也能 3 秒辨認方位。</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- 地鐵路線速查卡 -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <h4 class="font-extrabold text-slate-900 text-base mb-4 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
+            釜山主要軌道交通識別色與重要站點代碼
+          </h4>
+          <div class="space-y-3 text-xs sm:text-sm">
+            <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-slate-200">
+              <span class="px-2.5 py-1 rounded font-black text-white text-xs whitespace-nowrap bg-[#F05A28]">1號線 橘紅</span>
+              <div>
+                <strong class="text-slate-900">老城核心縱貫線 (Line 1)</strong>
+                <p class="text-slate-600 text-xs mt-0.5">札嘎其 (110)、南浦 (111)、釜山站 (113)、凡一/釜山鎮市場 (117)、西面 (119)。縱貫老城商圈與採購重鎮。</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-slate-200">
+              <span class="px-2.5 py-1 rounded font-black text-white text-xs whitespace-nowrap bg-[#3CB44A]">2號線 綠色</span>
+              <div>
+                <strong class="text-slate-900">海灣與商業軸線 (Line 2)</strong>
+                <p class="text-slate-600 text-xs mt-0.5">西面 (219)、廣安 (209)、Centum City (206)、海雲台 (203)、中洞/尾浦 (202)。連接主要海灘、汗蒸幕與膠囊列車。</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-slate-200">
+              <span class="px-2.5 py-1 rounded font-black text-white text-xs whitespace-nowrap bg-[#0054A6]">東海線 深藍</span>
+              <div>
+                <strong class="text-slate-900">東釜山觀光鐵道 (Donghae Line)</strong>
+                <p class="text-slate-600 text-xs mt-0.5">BEXCO (K118)、奧西利亞 Osiria (K122，Skyline Luge 滑車直達站)、機張 (K123，雪蟹市場)。</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-slate-200">
+              <span class="px-2.5 py-1 rounded font-black text-white text-xs whitespace-nowrap bg-[#782F8E]">輕軌 紫色</span>
+              <div>
+                <strong class="text-slate-900">金海國際機場輕軌 (BGL)</strong>
+                <p class="text-slate-600 text-xs mt-0.5">金海機場 (BGL04) ➔ 沙上站 (227 / BGL01，轉乘地鐵 2 號線至市區只需 22 分鐘)。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 韓國實體道路牌解碼卡 -->
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <h4 class="font-extrabold text-slate-900 text-base mb-4 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+            韓國道路名位址 (Road Name Address) 判讀技巧
+          </h4>
+          <div class="space-y-3.5 text-xs sm:text-sm text-slate-700">
+            <p>韓國自 2014 年起全面推行道路名系統，路口醒目的<strong>深藍底白字白邊金屬銘牌</strong>即是最高效率的實體定位儀：</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+              <div class="p-2.5 bg-white rounded-lg border border-slate-200 text-center">
+                <span class="kr-street-sign text-xs">大路 DAERO</span>
+                <p class="text-slate-600 text-[11px] mt-1.5">8線道以上幹道<br>(如: 中央大路)</p>
+              </div>
+              <div class="p-2.5 bg-white rounded-lg border border-slate-200 text-center">
+                <span class="kr-street-sign text-xs">路 RO</span>
+                <p class="text-slate-600 text-[11px] mt-1.5">2~7線道主要街區<br>(如: 札嘎其路)</p>
+              </div>
+              <div class="p-2.5 bg-white rounded-lg border border-slate-200 text-center">
+                <span class="kr-street-sign text-xs">街 GIL</span>
+                <p class="text-slate-600 text-[11px] mt-1.5">分支巷弄生活街道<br>(如: 國際市場1街)</p>
+              </div>
+            </div>
+            <div class="p-3 bg-sky-50 rounded-xl border border-sky-200 text-xs text-sky-900 leading-relaxed">
+              <strong>💡 導航實戰秘技</strong>：在韓國請務必使用 <strong>Naver Map (네이버지도)</strong> 查詢路線，支援繁體中文搜尋，公車進站倒數至秒，地鐵轉乘指示甚至會標明「幾號車廂幾號門離手扶梯最近（如 3-2 車廂）」，步行實景極其精準。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2. 行程總覽矩陣表 ==================== -->
+  <section id="overview" class="py-12 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-sky-600 mb-1">ROUTE MATRIX</h2>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">5 天 4 夜 順路零折返動線矩陣</h3>
+        <p class="text-slate-600 text-sm mt-2">將同軸線的景點與周邊頂級名店深度綁定，全日不走回頭路，買完大件棉被無縫送回飯店！</p>
+      </div>
+
+      <div class="overflow-x-auto bg-white rounded-2xl shadow-sm border border-slate-200">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead class="bg-slate-900 text-white font-bold">
+            <tr>
+              <th class="py-3.5 px-4">天數</th>
+              <th class="py-3.5 px-4">核心區域</th>
+              <th class="py-3.5 px-4">骨幹交通</th>
+              <th class="py-3.5 px-4">核心體驗與打卡亮點</th>
+              <th class="py-3.5 px-4">【首選名店】與【超強備案】</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700 font-medium">
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-4 px-4 font-black text-sky-600 whitespace-nowrap">Day 1</td>
+              <td class="py-4 px-4 font-bold text-slate-900">南浦 ✕ 札嘎其</td>
+              <td class="py-4 px-4"><span class="px-2 py-0.5 rounded text-white text-xs bg-[#F05A28]">1號線</span></td>
+              <td class="py-4 px-4">
+                <strong>國際市場買棉被抽真空</strong> ➔ BIFF廣場元祖黑糖餅 ➔ <strong>札嘎其市場大樓現挑活海鮮</strong> ➔ 樂天高空景觀台
+              </td>
+              <td class="py-4 px-4 text-xs">
+                【午】南浦蔘雞湯 / 元祖漢陽冷菜豬腳<br>
+                【晚】札嘎其 100號攤位帝王蟹大餐 / 183號總角商會
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-4 px-4 font-black text-sky-600 whitespace-nowrap">Day 2</td>
+              <td class="py-4 px-4 font-bold text-slate-900">甘川 ✕ 影島 ✕ 西面</td>
+              <td class="py-4 px-4"><span class="px-2 py-0.5 rounded text-white text-xs bg-[#F05A28]">1號線</span> + 綠色小巴</td>
+              <td class="py-4 px-4">
+                <strong>甘川洞文化村精緻韓服體驗</strong> ➔ 小王子與沙漠狐狸 ➔ 影島白淺灘海蝕隧道 ➔ 松島水晶纜車
+              </td>
+              <td class="py-4 px-4 text-xs">
+                【午】新昌清燉豬肉湯飯 / 甘川灶台魚糕<br>
+                【晚】西面味贊王 3.5cm 熟成厚切鹽烤肉 / 捕盜廳烤肉
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-4 px-4 font-black text-sky-600 whitespace-nowrap">Day 3</td>
+              <td class="py-4 px-4 font-bold text-slate-900">東釜山 ✕ 廣安里</td>
+              <td class="py-4 px-4"><span class="px-2 py-0.5 rounded text-white text-xs bg-[#0054A6]">東海線</span> + <span class="px-2 py-0.5 rounded text-white text-xs bg-[#3CB44A]">2號線</span></td>
+              <td class="py-4 px-4">
+                <strong>東釜山 Skyline Luge 4賽道斜坡滑車</strong> ➔ 海東龍宮海上千年古剎 ➔ 樂天Outlet ➔ 廣安大橋落日與無人機秀
+              </td>
+              <td class="py-4 px-4 text-xs">
+                【午】海東龍宮大鐵盤海鮮炸醬麵 / 機張雪蟹<br>
+                【晚】廣安里民樂水產市場生魚片野餐 / 秀敏家烤貝
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-4 px-4 font-black text-sky-600 whitespace-nowrap">Day 4</td>
+              <td class="py-4 px-4 font-bold text-slate-900">海雲台 ✕ Centum City</td>
+              <td class="py-4 px-4"><span class="px-2 py-0.5 rounded text-white text-xs bg-[#3CB44A]">2號線</span> + 藍線膠囊車</td>
+              <td class="py-4 px-4">
+                海雲台藍線公園<strong>天空膠囊列車 (Sky Capsule)</strong> ➔ 青沙浦灌籃高手平交道 ➔ <strong>新世界 Spa Land 五星級汗蒸幕</strong>
+              </td>
+              <td class="py-4 px-4 text-xs">
+                【午】青沙浦秀敏家炭火烤扇貝 / 尾浦末家海鮮鍋<br>
+                【晚】海雲台市場尚國家辣炒年糕 ＆ 炭烤盲鰻 / 錦秀河豚湯
+              </td>
+            </tr>
+            <tr class="hover:bg-slate-50/80">
+              <td class="py-4 px-4 font-black text-sky-600 whitespace-nowrap">Day 5</td>
+              <td class="py-4 px-4 font-bold text-slate-900">西面文創 ✕ 順暢返程</td>
+              <td class="py-4 px-4"><span class="px-2 py-0.5 rounded text-white text-xs bg-[#3CB44A]">2號線</span> + <span class="px-2 py-0.5 rounded text-white text-xs bg-[#782F8E]">輕軌</span></td>
+              <td class="py-4 px-4">
+                西面老字號豬肉湯飯 ➔ 田浦咖啡街紅磚小巷探訪 ➔ 西面地下街美妝最後掃貨 ➔ 順暢抵達金海機場或釜山站
+              </td>
+              <td class="py-4 px-4 text-xs">
+                【早午】松亭三代豬肉湯飯 (開業於1946年) / 浦項豬肉湯飯<br>
+                【下午】田浦 FM Coffee 手沖咖啡與法式甜點
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. 住宿戰略佈局 ==================== -->
+  <section id="hotels" class="py-12 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-sky-600 mb-1">ACCOMMODATION STRATEGY</h2>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">住宿戰略佈局：買完棉被免扛全天的基底推薦</h3>
+        <p class="text-slate-600 text-sm mt-2">棉被體積龐大，選對飯店位置才能在採購完成後 5 分鐘內進房卸貨，輕裝展開後續夜生活。</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- 飯店 1: 南浦首選 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden card-transition">
+          <div class="p-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold mb-3">
+              👑 前2晚極力推薦基底・棉被購物狂專用
+            </div>
+            <h4 class="text-lg font-black text-slate-900">南浦亞凡特飯店 (Aventree Hotel Busan / 아벤트리호텔 부산)</h4>
+            <div class="mt-2 space-y-2 text-xs sm:text-sm text-slate-600">
+              <p>📍 <strong>實地門牌</strong>：<span class="kr-street-sign text-xs">[ GWANGBOK-RO 39BEON-GIL 6 ]</span> (中區光復路39號街6)</p>
+              <p>🚇 <strong>軌道交通</strong>：🔴 1號線 [111 南浦站] 1號出口步行 5 分鐘；或 [110 札嘎其站] 7號出口步行 4 分鐘。</p>
+              <p>🌟 <strong>戰略優勢</strong>：<strong>樓下走出來直通國際市場與光復路商圈！</strong> 在國際市場買完棉被並抽真空後，不用搭任何車，直接提著走 3 分鐘回房間放好，再兩手空空去札嘎其市場大啖海鮮，體力保存極大化！</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 飯店 2: 西面樞紐 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden card-transition">
+          <div class="p-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold mb-3">
+              ⭐ 後2晚海線與都會樞紐・十字交會無痛換乘
+            </div>
+            <h4 class="text-lg font-black text-slate-900">西面阿班飯店 (Arban Hotel Seomyeon / 아르반호텔)</h4>
+            <div class="mt-2 space-y-2 text-xs sm:text-sm text-slate-600">
+              <p>📍 <strong>實地門牌</strong>：<span class="kr-street-sign text-xs">[ JUNGANG-DAERO 691BEON-GIL 32 ]</span> (釜山鎮區中央大路691號街32)</p>
+              <p>🚇 <strong>軌道交通</strong>：🔴 1號線 / 🟢 2號線 [119 / 219 西面站] 7號出口步行 4 分鐘。</p>
+              <p>🌟 <strong>戰略優勢</strong>：地處釜山最大地鐵十字樞紐，後兩天搭乘 2 號線直奔廣安里、Centum City、海雲台不用換線；周圍環繞豬肉湯飯一條街與味贊王烤肉，夜生活機能無敵。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. 四大特色專題攻略 ==================== -->
+  <section id="special-features" class="py-14 bg-slate-900 text-white border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-sky-400 mb-1">EXCLUSIVE SPECIAL GUIDES</h2>
+        <h3 class="text-2xl sm:text-4xl font-extrabold text-white">指定四大體驗・防坑與實戰深度全解密</h3>
+        <p class="text-slate-300 text-sm mt-2">針對棉被挑選、魚市秤重、韓服拍攝與滑車換票，彙整最接地氣的實戰防踩雷手冊。</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- 專題 1: 國際市場買棉被 -->
+        <div class="bg-slate-800/80 rounded-2xl border border-slate-700 p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-3xl">🛏️</span>
+            <div>
+              <h4 class="font-extrabold text-lg text-amber-300">專題一：國際市場「棉被一條街」選購與真空壓縮秘笈</h4>
+              <p class="text-xs text-slate-400">中央商圈／國際市場 1、2 區 (Gukje Market Bedding Street)</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-xs sm:text-sm text-slate-200 leading-relaxed">
+            <p><strong>為何台灣人必買韓國棉被？</strong> 韓國棉被採一體成型滾筒車縫技術，<strong>整件被子可直接丟洗衣機水洗、脫水、日曬烘乾</strong>，不用套被套且絕不結球變形，觸感極為親膚輕盈！</p>
+            <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 space-y-2">
+              <div class="text-amber-200 font-bold text-xs">🧵 兩大材質指名認證：</div>
+              <ul class="list-disc pl-5 space-y-1 text-xs text-slate-300">
+                <li><strong class="text-white">莫代爾（Modal / 렌징 모달）</strong>：由天然木漿纖維提煉，觸感冰涼順滑如絲綢，吸濕排汗極強，台灣春、夏、秋冷氣房最愛！單人被約 ₩40,000～55,000、雙人被約 ₩55,000～70,000。</li>
+                <li><strong class="text-white">極細纖維（Microfiber / 마이크로화이바）</strong>：短毛絨高密防蟎面料，重量超輕但發熱保暖鎖溫力極強，台灣寒冬神器！單人約 ₩45,000起、雙人約 ₩60,000起。</li>
+              </ul>
+            </div>
+            <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 space-y-2">
+              <div class="text-sky-300 font-bold text-xs">🏪 推薦老字號店面與溝通術：</div>
+              <ul class="list-disc pl-5 space-y-1 text-xs text-slate-300">
+                <li><strong class="text-white">藝珠寢具 (예주이불 / Yeju Bedding)</strong>：國際市場 40 年老舖，花色高雅新穎，老闆娘親切有耐心。</li>
+                <li><strong class="text-white">京信寢具 (경신침구)</strong>：國際市場 168 號攤位周邊，長期接待台灣客人，溝通完全無障礙。</li>
+                <li><strong class="text-emerald-300 font-bold">必備通關韓文密技</strong>：「請幫我真空壓縮包裝」➔ <strong>진공포장 해주세요 (Jingong-pojang hae-ju-se-yo)</strong>。現場大馬力抽風機會在 10 秒內將澎厚棉被抽成扁薄如紙的片狀包裝，塞進 26~29 吋行李箱一人可帶 3~4 件！</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 專題 2: 札嘎其市場吃活海鮮 -->
+        <div class="bg-slate-800/80 rounded-2xl border border-slate-700 p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-3xl">🦀</span>
+            <div>
+              <h4 class="font-extrabold text-lg text-sky-300">專題二：札嘎其魚市場推薦良心攤位與防坑指南</h4>
+              <p class="text-xs text-slate-400">札嘎其市場大樓 1F 活魚活蟹選購 ➔ 2F 景觀食堂代客料理</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-xs sm:text-sm text-slate-200 leading-relaxed">
+            <p><strong>避雷核心原則</strong>：水產市場價格具浮動性，切記<strong>「先確認空秤歸零、扣除塑膠水籃重量、問清2樓代工料理費」</strong>，便能安心享用比台灣便宜近半的生猛帝王蟹！</p>
+            <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 space-y-2">
+              <div class="text-amber-200 font-bold text-xs">⭐ 內行人口碑推薦攤位：</div>
+              <ul class="list-disc pl-5 space-y-1 text-xs text-slate-300">
+                <li><strong class="text-white">札嘎其本館 1 樓 100 號 / 101 號攤位</strong>：台灣自由行圈公認第一名良心攤！老闆豪邁爽朗懂中文，秤重公開透明去尾數，買帝王蟹大方加送鮮活扇貝、牡蠣、生章魚或烤魚，可刷卡。</li>
+                <li><strong class="text-white">札嘎其本館 1 樓 183 號【總角商會 (총각상회)】</strong>：DiningCode 滿分名店，主打定價透明的「帝王盛宴組合套餐」，不用費心個別比價議價。</li>
+                <li><strong class="text-white">札嘎其本館 1 樓 376 號【影島商會 (영도상회)】</strong>：專精當日新鮮白身活魚刺身，明碼標價 ₩35,000～45,000 份量十足。</li>
+              </ul>
+            </div>
+            <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 space-y-2">
+              <div class="text-sky-300 font-bold text-xs">💰 2 樓代客料理公定價目：</div>
+              <p class="text-xs text-slate-300">
+                基本人頭小菜費：<strong>₩5,000 / 人</strong>（泡菜配菜無限續）<br>
+                蒸螃蟹/烤海鮮料理費：<strong>約 ₩10,000 / 次</strong><br>
+                <strong class="text-amber-300">必點！蟹膏炒飯 (게딱지볶음밥)</strong>：<strong>約 ₩3,000 / 份</strong>，廚房會取下清蒸後的蟹殼，將濃郁蟹膏與白飯、海苔、麻油大火熱炒回填，鮮美絕頂！
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 專題 3: 甘川洞文化村韓服體驗 -->
+        <div class="bg-slate-800/80 rounded-2xl border border-slate-700 p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-3xl">👘</span>
+            <div>
+              <h4 class="font-extrabold text-lg text-teal-300">專題三：甘川彩繪山城韓服穿越體驗與絕佳機位</h4>
+              <p class="text-xs text-slate-400">小王子與沙漠狐狸 ✕ 彩色階梯露台</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-xs sm:text-sm text-slate-200 leading-relaxed">
+            <p><strong>為何韓服首選甘川洞？</strong> 比起海邊風大吹亂髮髻，甘川洞的層疊馬卡龍色山丘屋舍、彩繪壁畫與石階梯，最能襯托傳統韓服的優雅層次感！</p>
+            <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 space-y-2">
+              <div class="text-teal-200 font-bold text-xs">👗 推薦店家：哲秀與英熙 韓服哲學 (철수와영희)</div>
+              <p class="text-xs text-slate-300">
+                村口公車站下車正對面！韓服質感極佳，內含專業蓬裙架、手工精緻盤髮編髮、髮簪髮飾與搭配色系手提包，提供中文服務溝通無礙。（租借約 1.5~2 小時，約 ₩15,000～25,000）。
+              </p>
+            </div>
+            <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 space-y-2">
+              <div class="text-amber-200 font-bold text-xs">📸 必拍兩大經典同框點：</div>
+              <ul class="list-disc pl-5 space-y-1 text-xs text-slate-300">
+                <li><strong class="text-white">小王子與沙漠狐狸背影雕像</strong>：坐在石欄杆上坐在小王子身旁，拍攝並肩凝望整座粉彩聚落與蔚藍海港的經典背影。</li>
+                <li><strong class="text-white">甘川麵包坊觀景大露台</strong>：階梯高點俯瞰全景，韓服長裙襬隨風揚起，畫面極具電影感。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 專題 4: Skyline Luge 釜山斜坡滑車 -->
+        <div class="bg-slate-800/80 rounded-2xl border border-slate-700 p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-3xl">🏎️</span>
+            <div>
+              <h4 class="font-extrabold text-lg text-emerald-300">專題四：東釜山 Skyline Luge 無動力滑車極限狂飆</h4>
+              <p class="text-xs text-slate-400">機張 Osiria 觀光園區 4 大專用競速賽道</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-xs sm:text-sm text-slate-200 leading-relaxed">
+            <p><strong>重力加速度奔馳體驗</strong>：源自紐西蘭的無動力卡丁車，完全依靠地心引力俯衝，把手往前推加速、往後拉煞車，操作直覺上手，老少咸宜！</p>
+            <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 space-y-2">
+              <div class="text-emerald-300 font-bold text-xs">🏁 四大特色賽道全解析：</div>
+              <p class="text-xs text-slate-300">
+                總長逾 2.4 公里，分為 <strong>Wind (風之谷曲道)</strong>、<strong>Peak (極速下坡)</strong>、<strong>Marine (臨海遠眺)</strong>、<strong>Forest (穿林微風)</strong>。建議至少購買 <strong>3 回券或 4 回券</strong>，才能玩遍不同彎道樂趣！
+              </p>
+            </div>
+            <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-700 space-y-2">
+              <div class="text-amber-300 font-bold text-xs">🎫 票券與交通教戰：</div>
+              <p class="text-xs text-slate-300">
+                搭乘東海線至【奧西利亞站 (K122)】1號出口，站外排班計程車 4 分鐘直達（車資約 ₩4,500）。<br>
+                <strong class="text-teal-300">神級票券提示</strong>：持有 <strong>Visit Busan Pass (釜山通行證)</strong> 者，可至售票窗口免費兌換 2 次搭乘票券，CP值破表！
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. 每日實景動線與 5-Point 路引 ==================== -->
+  <section id="itinerary" class="py-14 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-sky-600 mb-1">FIELD ITINERARY</h2>
+        <h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900">5天4夜 每日詳細實景路引與時刻動線</h3>
+        <p class="text-slate-600 text-sm mt-2">每一站皆嚴格配備實體路牌、韓文門牌、最近地鐵出口與轉彎地標，絕不走冤枉路。</p>
+      </div>
+
+      <!-- ==================== DAY 1 ==================== -->
+      <div class="mb-16">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="px-3.5 py-1.5 rounded-xl font-black text-white text-base bg-sky-600 shadow-md">DAY 1</span>
+          <div>
+            <h4 class="text-xl sm:text-2xl font-black text-slate-900">老城海味風華・國際市場棉被採購 ✕ 札嘎其帝王蟹饗宴</h4>
+            <p class="text-xs sm:text-sm text-slate-500">南浦洞 ➔ 國際市場棉被街 ➔ BIFF廣場 ➔ 札嘎其水產市場 ➔ 樂天港景露台</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <!-- 卡片 1: 南浦午餐 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/dwaeji-gukbap.jpg" alt="南浦道地滋補美食" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景美食：老字號暖湯</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg">12:30｜午餐【滋補名店】</span>
+                  <span class="text-xs font-semibold text-slate-400">抵達釜山第一餐</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">南浦蔘雞湯 (남포삼계탕)・一甲子人蔘精燉土雞</h5>
+                
+                <!-- 5-Point 路引 -->
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#F05A28]">🔴 1號線 [111 南浦站 Nampo]</span></div>
+                  <div>🚪 <strong>Exit & Directory</strong>：<strong>Exit 1</strong> ➔ 抬頭跟隨指標「Gwangbok-ro / 光復路時裝街」</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ GWANGBOK-RO 43BEON-GIL ]</span></div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：南浦蔘雞湯 (남포삼계탕)・中區南浦洞3街61-2</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：出 1 號出口直走 120 公尺，在光復路大十字路口 Olive Young 旁巷子右轉，看見金黃底黑色韓文老字號招牌即抵達。</div>
+                </div>
+
+                <!-- 雙軌餐飲 -->
+                <div class="pt-2 border-t border-slate-100 text-xs space-y-1">
+                  <div>⭐ <strong class="text-slate-900">【首選名店】</strong>：南浦蔘雞湯 (남포삼계탕) —— 滾燙石鍋盛裝嫩土雞，腹內塞滿糯米、大棗、整支高麗人蔘，附贈人蔘藥酒。</div>
+                  <div>🔄 <strong class="text-sky-700">【超強備案】</strong>：元祖漢陽豬腳 (한양족발) —— 位於富平洞豬腳街 (`[ JOKBAL-GOLMOK ]`)，招牌冷拌芥末薄切豬腳（냉채족발）消暑彈牙。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 2: 國際市場買棉被 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/gukje-market.jpg" alt="國際市場棉被一條街" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景採購：國際市場棉被街</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-sky-100 text-sky-900 text-xs font-bold rounded-lg">14:00｜核心採買【韓國棉被抽真空】</span>
+                  <span class="text-xs font-semibold text-emerald-600 font-bold">✨ 指定重點願望</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">國際市場棉被街 (이불골목)・莫代爾四季被親選與大型壓縮裝箱</h5>
+                
+                <!-- 5-Point 路引 -->
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#F05A28]">🔴 1號線 [110 札嘎其站] / [111 南浦站]</span></div>
+                  <div>🚪 <strong>Exit & Directory</strong>：札嘎其站 <strong>Exit 7</strong> ➔ 跟隨指標「Gukje Market / 國際市場方向」</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ GUKJESIJANG 1-GIL ]</span> / <span class="kr-street-sign text-[11px]">[ JUNGGU-RO ]</span></div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：藝珠寢具 (예주이불) 或 京信寢具 (경신침구，國際市場 168 號攤周邊)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：從 BIFF 廣場沿九德路斑馬線穿越至國際市場 1 區與 2 區交叉口拱門，兩旁整齊疊放繽紛花色厚被的小街即是棉被一條街。</div>
+                </div>
+
+                <div class="text-xs text-slate-600 bg-sky-50/70 p-3 rounded-lg border border-sky-100 leading-relaxed">
+                  🛒 <strong>現場採購指南</strong>：手摸挑選「莫代爾 Modal」或「極細纖維 Microfiber」，結帳時說 <strong>진공포장 (Jingong-pojang)</strong>。店家現場開動超大吸塵壓縮機，棉被瞬間扁化至 3~5 公分，裝入手提袋後，<strong>直接漫步 4 分鐘送回南浦飯店房間放妥</strong>！
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 3: BIFF 廣場散步 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-48 lg:h-auto">
+                <img src="./images/ssiat-hotteok.jpg" alt="BIFF 廣場元祖黑糖餅" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景小吃：元祖黑糖堅果餅</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg">16:30｜點心散策【電影街與高空眺望】</span>
+                  <span class="text-xs font-semibold text-slate-400">南浦熱鬧商圈</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">BIFF 廣場星光手印 ＆ 樂天百貨光復店頂樓 Sky Park</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#F05A28]">🔴 1號線 [110 札嘎其站]</span> Exit 7 步出即至 BIFF 廣場</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ BIFF GWANGJANG-RO ]</span></div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：勝基元祖黑糖堅果餅 (승기원조씨앗호떡)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：地面鋪設世界名導手印銅板處，排隊人潮最長之紅色推車攤位即是。</div>
+                </div>
+                <p class="text-xs text-slate-600">現煎外酥內 Q 的糯米麵糰剪開後，塞入滿滿葵花子、南瓜子、花生碎與肉桂黑糖粉，香脆可口。吃完散步至樂天百貨光復店 13 樓頂樓空中花園，免費 360 度俯瞰影島大橋與釜山港落日。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 4: 札嘎其魚市場推薦攤位 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/jagalchi-market.jpg" alt="札嘎其海鮮市場大樓" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景地標：札嘎其海鷗造型大樓</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-red-100 text-red-900 text-xs font-bold rounded-lg">18:30｜晚餐【生猛海鮮盛宴】</span>
+                  <span class="text-xs font-semibold text-emerald-600 font-bold">✨ 指定重點願望</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">札嘎其市場大樓 1F 100號攤位・現蒸肥美帝王蟹與蟹膏炒飯</h5>
+                
+                <!-- 5-Point 路引 -->
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#F05A28]">🔴 1號線 [110 札嘎其站 Jagalchi]</span></div>
+                  <div>🚪 <strong>Exit & Directory</strong>：<strong>Exit 10</strong> ➔ 沿「Jagalchi Market / 札嘎其市場」通道直行出站</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ JAGALCHI HAEAN-RO 52 ]</span> (中區札嘎其海岸路52)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：札嘎其市場大樓 1 樓・<strong>100 號 / 101 號攤位</strong>（100호·101호）</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：出 10 號出口右轉直走 180 公尺抵達海港邊，正前方海鷗造型巨型 7 層玻璃大樓即為市場，由中央 3 號門入內直行中段。</div>
+                </div>
+
+                <!-- 雙軌餐飲 -->
+                <div class="pt-2 border-t border-slate-100 text-xs space-y-1">
+                  <div>⭐ <strong class="text-slate-900">【首選名店】</strong>：札嘎其大樓 1F 100號/101號攤位 ➔ 當面歸零扣籃重，選好帝王蟹或松葉蟹，老闆豪氣加贈生章魚、大扇貝與鮮蚵，送上 2 樓代客料理，最後務必加點「蟹膏炒飯 (게딱지볶음밥)」！</div>
+                  <div>🔄 <strong class="text-sky-700">【超強備案】</strong>：1F 183號【總角商會 (총각상회)】（套餐定價免議價）；或隔壁棟「新東亞水產綜合市場」1F 85號/87號攤位。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== DAY 2 ==================== -->
+      <div class="mb-16">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="px-3.5 py-1.5 rounded-xl font-black text-white text-base bg-teal-600 shadow-md">DAY 2</span>
+          <div>
+            <h4 class="text-xl sm:text-2xl font-black text-slate-900">甘川韓服漫步・影島絕壁海岸 ✕ 西面頂級烤肉</h4>
+            <p class="text-xs sm:text-sm text-slate-500">甘川洞文化村韓服 ➔ 新昌豬肉湯飯 ➔ 影島白淺灘海蝕洞 ➔ 松島水晶纜車 ➔ 味贊王烤肉</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <!-- 卡片 1: 甘川洞韓服 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/gamcheon-village.jpg" alt="甘川洞文化村全景" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景地標：馬卡龍彩繪山城</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-teal-100 text-teal-900 text-xs font-bold rounded-lg">09:30｜美學體驗【精緻韓服登頂】</span>
+                  <span class="text-xs font-semibold text-emerald-600 font-bold">✨ 指定重點願望</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">甘川洞文化村 (감천문화마을)・哲秀與英熙韓服體驗與小王子合影</h5>
+                
+                <!-- 5-Point 路引 -->
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#F05A28]">🔴 1號線 [109 土城站 Toseong]</span></div>
+                  <div>🚪 <strong>Exit & Directory</strong>：<strong>Exit 6</strong> ➔ 釜山大學醫院急診室對面站牌搭乘小巴「沙下1-1、西區2、西區2-2」約 10 分鐘</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ GAMNAE 2-RO 203 ]</span> (沙下區甘內2路203)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：哲秀與英熙 韓服哲學 (철수와영희 / Chulsoo and Younghee) 2 樓</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：公車抵達「甘川小學 / 甘川文化村入口」站牌下車，正前方灰色建築 2 樓即是哲秀與英熙；換裝後沿主街步行 4 分鐘即可見「小王子與沙漠狐狸雕像」。</div>
+                </div>
+
+                <p class="text-xs text-slate-600">包含全套燙金韓服、蕾絲裙撐、專人髮髻編髮、復古手包。穿著韓服穿梭於粉紅粉藍交疊的陡峭山城巷弄，坐在小王子身旁留下背影經典大片。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 2: 土城午餐 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-48 lg:h-auto">
+                <img src="./images/dwaeji-gukbap.jpg" alt="新昌清燉豬肉湯飯" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景美食：清燉豬肉湯飯</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg">12:45｜午餐【在地老饕湯飯】</span>
+                  <span class="text-xs font-semibold text-slate-400">土城老城好滋味</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">新昌土鍋湯 (신창국밥 토성점)・琥珀色濃縮精燉清高湯</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#F05A28]">🔴 1號線 [109 土城站 Toseong]</span></div>
+                  <div>🚪 <strong>Exit & Directory</strong>：從甘川搭小巴返回土城站 <strong>Exit 1</strong> 出口直走</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ BOSU-DAERO 53 ]</span> (西區寶水大路53)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：新昌國飯 (신창국밥 토성본점)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：土城站 1 號出口直行 150 公尺，右側醒目紅底白字老字號獨立店面。</div>
+                </div>
+
+                <div class="pt-2 border-t border-slate-100 text-xs space-y-1">
+                  <div>⭐ <strong class="text-slate-900">【首選名店】</strong>：新昌土鍋湯 (신창국밥) —— 不同於一般乳白色豚骨湯，此店堅持以大骨慢火煨出透明琥珀色清湯，肉片肥瘦均稱，血腸無腥味。</div>
+                  <div>🔄 <strong class="text-sky-700">【超強備案】</strong>：甘川文化村入口「甘川灶台魚糕 (감천가마솥어묵)」，搭乘景觀咖啡廳享用輕食。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 3: 影島白淺灘 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/huinnyeoul-culture-village.jpg" alt="影島白淺灘文化村海景" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景地標：絕壁海景白淺灘</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-sky-100 text-sky-900 text-xs font-bold rounded-lg">14:30｜絕壁步道【海岸隧道與海景】</span>
+                  <span class="text-xs font-semibold text-slate-400">影島代表名勝</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">影島白淺灘文化村 (흰여울문화마을) ＆ 白淺灘海岸隧道</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：公車直達（從南浦站 6 號出口前公車站搭乘 <strong>6、7、9、71 號公車</strong> 約 12 分鐘）</div>
+                  <div>🚪 <strong>Exit & Directory</strong>：公車站牌「白淺灘文化村 (흰여울문화마을)」下車即達</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ JEORYEONG-RO 194 ]</span> (影島區絕影路194)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：白淺灘海岸隧道 (흰여울해안터널)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：下公車後往靠海側台階向下走，眼前即是蔚藍大海與白色屋舍交織的絕美海岸。沿絕壁木棧道直走到底即為穿透海蝕崖的打卡隧道。</div>
+                </div>
+                <p class="text-xs text-slate-600">順著沿海步道散步，可在面海第一排的「Aether」或「Having Moment」咖啡館點一杯冰拿鐵，靠窗眺望遠方南港大橋上的船隻點點。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 4: 松島海上纜車 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-48 lg:h-auto">
+                <img src="./images/songdo-skywalk.jpg" alt="松島海上纜車與天空步道" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景地標：松島海上透明纜車</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-teal-100 text-teal-900 text-xs font-bold rounded-lg">16:45｜跨海纜車【水晶車廂與龍宮步道】</span>
+                  <span class="text-xs font-semibold text-slate-400">西區濱海高空</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">松島海上纜車 (송도해상케이블카)・橫越 1.62km 蔚藍大海</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：自影島搭計程車過南港大橋約 10 分鐘（車資約 ₩7,000）至松島海水浴場纜車站</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ SONGDOHAEBYEON-RO 171 ]</span> (西區松島海邊路171)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：松島 Bay Station 纜車售票大樓</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：抵達海灘入口處，正上方高空即是滑過天際的五彩纜車鋼索。</div>
+                </div>
+                <p class="text-xs text-slate-600">建議選購透明玻璃底部的「水晶車廂 (Crystal Cabin)」，腳下浪花翻騰。抵達對岸岩南公園後，可順遊銜接無人島的「松島龍宮天空步道」。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 5: 西面晚餐烤肉 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/korean-bbq.jpg" alt="味贊王熟成厚切鹽烤肉" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景名店：3.5cm 熟成厚切五花肉</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-red-100 text-red-900 text-xs font-bold rounded-lg">19:00｜晚餐【頂級熟成烤肉】</span>
+                  <span class="text-xs font-semibold text-slate-400">西面熱鬧街區</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">味贊王鹽烤肉 西面店 (맛찬들왕소금구이)・紅外線測溫究極豬五花</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#F05A28]">🔴 1號線</span> / <span class="font-bold text-[#3CB44A]">🟢 2號線 [119 / 219 西面站 Seomyeon]</span></div>
+                  <div>🚪 <strong>Exit & Directory</strong>：<strong>Exit 7</strong> ➔ 跟隨指標「Seomyeon Market / 西面市場」</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ JUNGANG-DAERO 691BEON-GA-GIL 24-3 ]</span></div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：味贊王鹽烤肉 西面店 (맛찬들왕소금구이 서면점)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：出 7 號出口直走過第一個街角星巴克左轉進入西面美食街，直行約 100 公尺右側，看見黑色招牌與門口透明大肉品熟成冰櫃即是。</div>
+                </div>
+
+                <div class="pt-2 border-t border-slate-100 text-xs space-y-1">
+                  <div>⭐ <strong class="text-slate-900">【首選名店】</strong>：味贊王鹽烤肉 —— 3.5 公分厚切國產豬五花，店員拿測溫槍確保烤盤達 220°C 專人代烤，兩面金黃酥脆，夾上獨家醃水芹菜（미나리）與石鍋大醬湯，肉汁爆炸！</div>
+                  <div>🔄 <strong class="text-sky-700">【超強備案】</strong>：捕盜廳烤肉 (포도청) —— 位於西面樂天百貨後方，炭火調味豬排骨香甜多汁，價格平實道地。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== DAY 3 ==================== -->
+      <div class="mb-16">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="px-3.5 py-1.5 rounded-xl font-black text-white text-base bg-blue-600 shadow-md">DAY 3</span>
+          <div>
+            <h4 class="text-xl sm:text-2xl font-black text-slate-900">東釜山極速狂飆・海東龍宮 ✕ 廣安大橋落日夜色</h4>
+            <p class="text-xs sm:text-sm text-slate-500">Skyline Luge 滑車 ➔ 龍宮海鮮炸醬麵 ➔ 海東龍宮寺 ➔ 樂天Outlet ➔ 廣安里夜景生魚片</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <!-- 卡片 1: Skyline Luge 滑車 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/skyline-luge.jpg" alt="Skyline Luge 釜山斜坡滑車" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景體驗：重力卡丁車狂飆</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-emerald-100 text-emerald-900 text-xs font-bold rounded-lg">10:00｜極速競賽【重力卡丁車俯衝】</span>
+                  <span class="text-xs font-semibold text-emerald-600 font-bold">✨ 指定重點願望</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">Skyline Luge 釜山斜坡滑車 (스카이라인 루지 부산)・4 條賽道風馳電掣</h5>
+                
+                <!-- 5-Point 路引 -->
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#0054A6]">🔵 東海線 [K122 奧西利亞站 Osiria]</span></div>
+                  <div>🚪 <strong>Exit & Directory</strong>：<strong>Exit 1</strong> ➔ 出站轉乘排班計程車約 4 分鐘（或搭公車 139 / 185 / 1001）</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ GIJANG HAEAN-RO 42 ]</span> (機張郡機張海岸路42)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：Skyline Luge Busan (스카이라인 루지 부산) 票務大廳</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：抵達樂天世界冒險樂園旁，抬頭即可看見 Skyline 橘黃色吊椅纜車與山坡上蜿蜒的彩色水泥滑道。</div>
+                </div>
+
+                <p class="text-xs text-slate-600">挑選合適尺碼安全帽 ➔ 搭乘 Skyride 高空吊椅一覽東釜山海景與童話城堡 ➔ 頂峰接受 1 分鐘操縱剎車教學 ➔ 沿著 Wind、Peak、Marine 等 4 條賽道極速俯衝！（建議購買 3 次或 4 次券，或持 Visit Busan Pass 兌換）。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 2: 龍宮海鮮炸醬麵 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-48 lg:h-auto">
+                <img src="./images/dwaeji-gukbap.jpg" alt="海東龍宮大鐵盤海鮮炸醬麵" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景美食：大鐵盤海鮮炸醬麵</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg">12:30｜午餐【澎湃海味熱炒】</span>
+                  <span class="text-xs font-semibold text-slate-400">機張海岸名物</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">海東龍宮海鮮炸醬麵 (용궁해물쟁반짜장)・滿滿章魚魷魚大鐵盤</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：從 Luge 步行約 8 分鐘或搭車 2 分鐘抵達龍宮寺入口前</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ YONGGUNG-GIL 7 ]</span> (機張郡龍宮街7)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：海東龍宮海鮮托盤炸醬 (용궁해물쟁반짜장)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：海東龍宮寺主要參道入口牌樓正對面，大紅底黃字獨棟建築。</div>
+                </div>
+
+                <div class="pt-2 border-t border-slate-100 text-xs space-y-1">
+                  <div>⭐ <strong class="text-slate-900">【首選名店】</strong>：海東龍宮海鮮炸醬麵 —— 鐵盤上鋪滿大塊章魚、鮮蝦、魷魚與洋蔥，帶微辣醬汁鑊氣十足，吸飽醬汁的手工麵條彈牙過癮。</div>
+                  <div>🔄 <strong class="text-sky-700">【超強備案】</strong>：機張市場雪蟹街【青海王雪蟹 (청해씨푸드)】—— 若想續吃大螃蟹，搭車 8 分鐘直奔機張市場現蒸肥美俄羅斯雪蟹。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 3: 海東龍宮寺 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/haedong-yonggungsa.jpg" alt="海東龍宮寺全景" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景地標：海東龍宮寺海蝕絕壁</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-sky-100 text-sky-900 text-xs font-bold rounded-lg">14:00｜海天巡禮【岩壁上的千年古剎】</span>
+                  <span class="text-xs font-semibold text-slate-400">韓國最美海邊寺廟</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">海東龍宮寺 (해동용궁사)・日出岩、十二生肖石雕與觀音金佛</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：午餐後過馬路沿龍宮街林蔭參道漫步 6 分鐘即達</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ YONGGUNG-GIL 86 ]</span> (機張郡龍宮街86)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：海東龍宮寺 (Haedong Yonggungsa)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：穿過十二生肖神像與交通安全祈願塔後，走下 108 階石梯，轉角瞬間豁然開朗，整座古寺建於怒濤拍岸的礁岩之上。</div>
+                </div>
+                <p class="text-xs text-slate-600">韓國罕見座落於海邊崖壁的佛門聖地，海風徐徐、浪濤拍擊黑石礁岩，登上高處海水觀音大佛俯瞰廣闊東海，景色大氣磅礡。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 4: 廣安里夜景與晚餐 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/gwangalli-bridge.jpg" alt="廣安里海水浴場與廣安大橋夜景" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景地標：廣安大橋百萬夜景</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-red-100 text-red-900 text-xs font-bold rounded-lg">18:30｜浪漫夜色【生魚片與海風野餐】</span>
+                  <span class="text-xs font-semibold text-slate-400">水營區海岸地標</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">廣安里海水浴場 (광안리해수욕장)・民樂水產大樓現切活魚 ✕ 廣安大橋夜景</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#3CB44A]">🟢 2號線 [209 廣安站 Gwangan]</span></div>
+                  <div>🚪 <strong>Exit & Directory</strong>：<strong>Exit 5</strong> ➔ 直走沿「Gwanganhaebyeon-ro / 廣安海邊路」方向步行 8 分鐘</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ GWANGANHAEBYEON-RO 219 ]</span> (水營區廣安海邊路219)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：民樂生魚片大樓 (밀락회타운) ＆ 民樂水邊公園</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：踏上海灘細沙，正前方橫亙整個海灣的宏偉雙層懸索「廣安大橋 (Gwangan Bridge)」已點亮七彩光雕。</div>
+                </div>
+
+                <div class="pt-2 border-t border-slate-100 text-xs space-y-1">
+                  <div>⭐ <strong class="text-slate-900">【首選名店】</strong>：民樂生魚片大樓 (밀락회타운) —— 1 樓現選光魚、比目魚現切刺身（約 ₩30,000 大盤），外帶附辣醬芥末與生菜，至海灘階梯配啤酒享用，每週六晚間更有震撼「廣安里 M 無人機光雕秀」！</div>
+                  <div>🔄 <strong class="text-sky-700">【超強備案】</strong>：廣安里 秀敏家烤貝分店 —— 臨海第一排炭火烤大扇貝，伴隨海浪聲無比浪漫。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== DAY 4 ==================== -->
+      <div class="mb-16">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="px-3.5 py-1.5 rounded-xl font-black text-white text-base bg-emerald-600 shadow-md">DAY 4</span>
+          <div>
+            <h4 class="text-xl sm:text-2xl font-black text-slate-900">海岸鐵道浪漫・海雲台膠囊列車 ✕ 五星汗蒸幕</h4>
+            <p class="text-xs sm:text-sm text-slate-500">藍線天空膠囊列車 ➔ 青沙浦灌籃高手平交道 ➔ 秀敏家烤扇貝 ➔ 新世界 Spa Land 汗蒸幕 ➔ 海雲台夜市</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <!-- 卡片 1: 藍線膠囊列車 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/blueline-sky-capsule.jpg" alt="海雲台藍線公園天空膠囊列車" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景地標：高空彩色復古膠囊車</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-sky-100 text-sky-900 text-xs font-bold rounded-lg">09:45｜海線浪漫【高空穿梭海岸松林】</span>
+                  <span class="text-xs font-semibold text-slate-400">釜山超人氣打卡第一名</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">海雲台藍線公園 (Haeundae Blueline Park)・天空膠囊列車 尾浦 ➔ 青沙浦</h5>
+                
+                <!-- 5-Point 路引 -->
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#3CB44A]">🟢 2號線 [202 中洞站 Jung-dong]</span> 7號出口步行 15 分鐘（或轉乘計程車 4 分鐘）</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ DALMAJI-GIL 62BEON-GIL 13 ]</span> (海雲台區迎月路62號街13)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：藍線公園 尾浦車站 (블루라인파크 미포정거장) 2 樓搭乘處</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：抵達尾浦漁港堤防，看見黃、紅、藍、綠各色復古高架膠囊車在 10 公尺高軌道緩緩行駛，直上 2 樓驗票閘門。</div>
+                </div>
+
+                <p class="text-xs text-slate-600">專屬 2~4 人獨立包廂，以時速 5 公里悠然前行於舊東海南部線廢棄鐵道高架上，右側是廣袤無垠的青藍東海與海浪拍岸，約 30 分鐘舒適抵達青沙浦站。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 2: 青沙浦灌籃高手與烤貝午餐 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/cheongsapo.jpg" alt="青沙浦雙子紅白燈塔與漁港" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景名勝：青沙浦紅白燈塔</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg">11:30｜經典打卡 ＆ 午餐【炭烤鮮活扇貝】</span>
+                  <span class="text-xs font-semibold text-slate-400">文青小漁村名物</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">青沙浦海景平交道 ＆ 秀敏家烤貝 (수민이네)・炭烤鮮活大文蛤</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：天空膠囊列車抵達「青沙浦站 (Cheongsapo)」出站即達</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ CHEONGSAPO-RO 58 ]</span> (海雲台區青沙浦路58)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：秀敏家 (수민이네 조개구이)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：青沙浦車站出門往下坡走，正對大海的平交道即是「釜山版灌籃高手機位」；左轉往漁港防波堤方向步行 3 分鐘即達秀敏家。</div>
+                </div>
+
+                <div class="pt-2 border-t border-slate-100 text-xs space-y-1">
+                  <div>⭐ <strong class="text-slate-900">【首選名店】</strong>：秀敏家烤貝 (수민이네) —— 炭火上擺滿鮮活扇貝、大文蛤與九孔，店員教學將烤熟貝肉剪進鋁箔碗中，淋上滿滿奶油、金針菇、洋蔥與起司融化拉絲，鮮甜至極！</div>
+                  <div>🔄 <strong class="text-sky-700">【超強備案】</strong>：尾浦末家 (미포끝집) —— 位於尾浦懸崖盡頭，主打露天無遮蔽海景生魚片與海鮮辣湯。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 3: 新世界 Spa Land 汗蒸幕 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/centum-city.jpg" alt="Centum City 新世界百貨" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景地標：金氏世界紀錄最大百貨</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-emerald-100 text-emerald-900 text-xs font-bold rounded-lg">15:00｜極致放鬆【五星級溫泉汗蒸幕】</span>
+                  <span class="text-xs font-semibold text-slate-400">洗滌旅途疲憊必去</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">新世界百貨 Spa Land (스파랜드)・地下 1000m 天然碳酸溫泉與 18 種主題熱療室</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#3CB44A]">🟢 2號線 [206 Centum City 站]</span> 地下通道直通百貨</div>
+                  <div>🚪 <strong>Exit & Directory</strong>：<strong>Exit 12</strong> ➔ 連通新世界百貨地下 1 樓，依指標搭手扶梯至 1 樓門口</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ CENTUMNAM-DAERO 35 ]</span> (海雲台區Centum南大路35)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：Spa Land 專用接待大廳 (新世界百貨 1 樓 Prada 專櫃旁通道)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：走進百貨 1 樓中庭，依頭頂上方「SPA LAND」金色字樣指引進入獨立門面。</div>
+                </div>
+                <p class="text-xs text-slate-600">持 Visit Busan Pass 免費入場 4 小時！館內引進兩種純天然溫泉水，擁有羅馬三溫暖、土耳其浴、黃土房、冰雪房，並設有日式戶外足湯花園。換上寬鬆汗蒸服、綁上韓劇同款「羊角毛巾」，喝一杯香甜米釀（식혜）配溫泉蛋，極致療癒！</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 4: 海雲台市場晚餐 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-52 lg:h-auto">
+                <img src="./images/haeundae-beach.jpg" alt="海雲台海岸與市場熱絡氛圍" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景地標：海雲台海濱與傳統市場</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-red-100 text-red-900 text-xs font-bold rounded-lg">19:30｜晚餐【在地夜市雙絕】</span>
+                  <span class="text-xs font-semibold text-slate-400">海雲台排隊傳奇</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">海雲台傳統市場 (해운대 전통시장)・尚國家辣炒年糕 ＆ 炭烤辣醬盲鰻</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#3CB44A]">🟢 2號線 [203 海雲台站 Haeundae]</span></div>
+                  <div>🚪 <strong>Exit & Directory</strong>：<strong>Exit 3</strong> ➔ 沿「Gunam-ro / 龜南路文化廣場」大街直走 4 分鐘左轉進市場拱門</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ GUNAM-RO 41BEON-GIL ]</span> (海雲台區龜南路41號街)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：尚國家 (상국이네) ＆ 機張產盲鰻 (기장산곰장어)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：市場中段排隊人龍最長、門口堆滿金黃酥脆炸物推車即是尚國家；鄰近數家魚缸內現撈活盲鰻店家即是盲鰻街。</div>
+                </div>
+
+                <div class="pt-2 border-t border-slate-100 text-xs space-y-1">
+                  <div>⭐ <strong class="text-slate-900">【首選名店】</strong>：尚國家辣炒年糕 (상국이네) —— 粗厚 Q 彈的米年糕裹上特濃辣甜醬汁，搭配現炸魷魚、炸紫菜捲與熱魚板湯；接著在隔壁享用以錫箔紙炭烤的辣炒活盲鰻（곰장어），脆彈彈牙。</div>
+                  <div>🔄 <strong class="text-sky-700">【超強備案】</strong>：錦秀河豚湯 海雲台總店 (금수복국) —— 1970年創立，金屬砂鍋滾燙上桌的清燉白子河豚湯，湯頭鮮甜醒胃。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== DAY 5 ==================== -->
+      <div class="mb-12">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="px-3.5 py-1.5 rounded-xl font-black text-white text-base bg-amber-600 shadow-md">DAY 5</span>
+          <div>
+            <h4 class="text-xl sm:text-2xl font-black text-slate-900">靈魂湯飯傳承・文青小巷巡禮 ✕ 伴手禮滿載歸國</h4>
+            <p class="text-xs sm:text-sm text-slate-500">西面松亭三代湯飯 ➔ 田浦咖啡街 ➔ 西面地下商街掃貨 ➔ 順暢抵達機場或高鐵</p>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <!-- 卡片 1: 西面豬肉湯飯 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-48 lg:h-auto">
+                <img src="./images/dwaeji-gukbap.jpg" alt="松亭三代豬肉湯飯" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景老店：西面豬肉湯飯街代表</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg">10:00｜早午餐【80年老牌靈魂高湯】</span>
+                  <span class="text-xs font-semibold text-slate-400">西面經典傳奇</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">松亭三代豬肉湯飯 (송정3대국밥)・1946 年創立釜山第一味</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：<span class="font-bold text-[#F05A28]">🔴 1號線</span> / <span class="font-bold text-[#3CB44A]">🟢 2號線 [119 / 219 西面站]</span></div>
+                  <div>🚪 <strong>Exit & Directory</strong>：<strong>Exit 1</strong> ➔ 出站第一個巷口右轉直進「西面豬肉湯飯一條街」</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ SEOMYEON-RO 68BEON-GIL 33 ]</span> (釜山鎮區西面路68號街33)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：松亭三代國飯 (송정3대국밥)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：巷口第三間，門口兩口巨大鐵鍋終年冒著滾滾白煙，店員正熟練將大塊白切肉浸入高湯中撈起切片。</div>
+                </div>
+
+                <div class="pt-2 border-t border-slate-100 text-xs space-y-1">
+                  <div>⭐ <strong class="text-slate-900">【首選名店】</strong>：松亭三代豬肉湯飯 —— 乳白色純豚骨慢火熬煮數十小時，上桌後依照道地吃法加入滿滿韭菜、蝦醬（새우젓）、辣醬與麵線拌勻，肉片鮮嫩無比。</div>
+                  <div>🔄 <strong class="text-sky-700">【超強備案】</strong>：浦項豬肉湯飯 (포항돼지국밥) —— 隔壁鄰居老店，大片薄切肉與自家醃漬脆蘿蔔泡菜各擅勝場。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 卡片 2: 田浦咖啡街與返程 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-sm card-transition">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="lg:w-1/3 img-box rounded-xl h-48 lg:h-auto">
+                <img src="./images/centum-city.jpg" alt="西面文創與地下街採購" class="w-full h-full object-cover">
+                <div class="absolute bottom-2 left-2 bg-slate-900/80 text-white text-[11px] px-2 py-0.5 rounded">實景街區：文青小巷與美妝商街</div>
+              </div>
+              <div class="lg:w-2/3 space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                  <span class="px-2.5 py-1 bg-sky-100 text-sky-900 text-xs font-bold rounded-lg">11:30～14:00｜散策採購 ＆ 順暢返程</span>
+                  <span class="text-xs font-semibold text-slate-400">滿載而歸完美落幕</span>
+                </div>
+                <h5 class="text-lg font-black text-slate-900">田浦咖啡街 (전포카페거리) ＆ 西面地下街美妝採購 ➔ 機場返台</h5>
+                
+                <div class="p-3.5 bg-slate-50 rounded-xl border border-slate-200 text-xs space-y-1.5">
+                  <div>🚇 <strong>Line & Code</strong>：西面站步行至田浦站約 6 分鐘；返程由西面搭 <span class="font-bold text-[#3CB44A]">🟢 2號線</span> 至沙上轉 <span class="font-bold text-[#782F8E]">🟣 輕軌</span> 直達金海機場 (約 32 分鐘)</div>
+                  <div>🪧 <strong>Physical Street Sign</strong>：<span class="kr-street-sign text-[11px]">[ JEONPO-DAERO 209BEON-GIL ]</span> (田浦大路209號街)</div>
+                  <div>🏬 <strong>Exact Local Storefront</strong>：FM Coffee Factory ＆ 西面地下商街 (Seomyeon Mall)</div>
+                  <div>🧭 <strong>Visual Turning Cue</strong>：昔日汽車五金零件老廠房改建為一間間極簡清水模、紅磚工業風特色手沖咖啡廳。</div>
+                </div>
+                <p class="text-xs text-slate-600">在 FM Coffee 來杯招牌冷萃或抹茶甜點，隨後至西面地下商街掃齊 Olive Young 韓系美妝保養品、海苔與伴手禮。回飯店取回抽真空的扁平棉被行李箱，搭地鐵無縫直達金海國際機場，完成 5 天 4 夜精采旅程！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 6. 釜山在地美食推薦全圖鑑 ==================== -->
+  <section id="food-guide" class="py-14 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-sky-600 mb-1">LOCAL DELICACIES</h2>
+        <h3 class="text-2xl sm:text-4xl font-extrabold text-slate-900">釜山必吃名物美饌全圖鑑</h3>
+        <p class="text-slate-600 text-sm mt-2">網羅釜山最具代表性的 8 大在地經典美食與內行人推薦老舖，精準滿足味蕾。</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 美食 1 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 card-transition">
+          <span class="text-3xl mb-2 block">🦀</span>
+          <h4 class="font-black text-slate-900 text-base">活蒸帝王蟹 / 松葉蟹</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">대게 / 킹크랩</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            產地直送肉質緊緻鮮甜，現場現蒸保留原汁原味，最後一定要將蟹黃交由廚房大火快炒成香濃<strong>「蟹膏炒飯」</strong>。<br>
+            <strong class="text-sky-700">推薦地</strong>：札嘎其市場 100 號攤位、機張市場。
+          </p>
+        </div>
+
+        <!-- 美食 2 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 card-transition">
+          <span class="text-3xl mb-2 block">🍲</span>
+          <h4 class="font-black text-slate-900 text-base">釜山豬肉湯飯</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">돼지국밥</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            韓戰時期誕生的釜山靈魂庶民美食！純豬大骨長時精燉，湯頭濃郁或清甜各有門派，配搭辣韭菜與蝦醬提味。<br>
+            <strong class="text-sky-700">推薦地</strong>：西面松亭三代、新昌土鍋湯、浦項湯飯。
+          </p>
+        </div>
+
+        <!-- 美食 3 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 card-transition">
+          <span class="text-3xl mb-2 block">🥩</span>
+          <h4 class="font-black text-slate-900 text-base">熟成厚切五花肉</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">숙성 삼겹살</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            達 3.5cm 的極致厚切，經低溫熟成工藝釋放肉汁，店員精準測溫烤盤代烤至表面金黃焦香，包水芹菜解膩絕配。<br>
+            <strong class="text-sky-700">推薦地</strong>：味贊王鹽烤肉 (맛찬들)、捕盜廳。
+          </p>
+        </div>
+
+        <!-- 美食 4 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 card-transition">
+          <span class="text-3xl mb-2 block">🥞</span>
+          <h4 class="font-black text-slate-900 text-base">元祖堅果黑糖餅</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">씨앗호떡</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            釜山最具代表性的街頭甜點！糯米麵糰在平底鍋上煎得金黃酥脆，剪開後塞滿葵花子、南瓜子與花生肉桂糖粉。<br>
+            <strong class="text-sky-700">推薦地</strong>：BIFF 廣場勝基元祖黑糖餅。
+          </p>
+        </div>
+
+        <!-- 美食 5 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 card-transition">
+          <span class="text-3xl mb-2 block">🐚</span>
+          <h4 class="font-black text-slate-900 text-base">炭火起司烤扇貝</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">조개구이</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            青沙浦與尾浦漁村名物！在炭火上烤鮮活大扇貝，加入大塊奶油與大量牽絲莫札瑞拉起司，奶香與鮮甜交融。<br>
+            <strong class="text-sky-700">推薦地</strong>：青沙浦秀敏家 (수민이네)、尾浦末家。
+          </p>
+        </div>
+
+        <!-- 美食 6 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 card-transition">
+          <span class="text-3xl mb-2 block">🥢</span>
+          <h4 class="font-black text-slate-900 text-base">炭烤活盲鰻</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">짚불 / 양념 곰장어</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            釜山特色海味，現點現撈去皮後以錫箔紙包覆炭烤，特調甜辣醬汁悶煮入味，口感如脆腸般彈牙有嚼勁。<br>
+            <strong class="text-sky-700">推薦地</strong>：海雲台傳統市場盲鰻街、札嘎其盲鰻巷。
+          </p>
+        </div>
+
+        <!-- 美食 7 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 card-transition">
+          <span class="text-3xl mb-2 block">🐟</span>
+          <h4 class="font-black text-slate-900 text-base">釜山老字號古法魚糕</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">부산어묵</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            鮮魚漿含量高達 70% 以上，紮實彈牙，路邊攤串著吃熱氣騰騰，配無限量供應的甘甜白蘿蔔魚糕清湯暖心無比。<br>
+            <strong class="text-sky-700">推薦地</strong>：古來思魚糕 (고래사어묵)、三珍魚糕 (삼진어묵)。
+          </p>
+        </div>
+
+        <!-- 美食 8 -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 card-transition">
+          <span class="text-3xl mb-2 block">🐡</span>
+          <h4 class="font-black text-slate-900 text-base">砂鍋清燉河豚湯</h4>
+          <p class="text-xs text-slate-500 font-semibold mb-2">복국</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            韓國資深老饕與飲酒醒胃最愛！以大豆芽、水芹菜與蒜蓉襯托河豚肉的極致鮮嫩，湯清如水但甘甜厚重。<br>
+            <strong class="text-sky-700">推薦地</strong>：錦秀河豚湯 海雲台總店 (금수복국)。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 頁尾 ==================== -->
+  <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="text-center sm:text-left">
+        <div class="font-black text-white text-base tracking-tight mb-1">
+          釜山極致山海巡禮 5D4N 自由行手冊
+        </div>
+        <p class="text-slate-500">專為 Roy Wang 量身設計・實景路引標竿・四大體驗完整落實</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="./busan-travel-guide-2026.pdf" download="釜山極致山海巡禮_5天4夜深度遊實景手冊.pdf" 
+           class="px-4 py-2 bg-sky-600 text-white rounded-lg font-bold hover:bg-sky-500 transition-colors">
+          下載完整 PDF 離線指南
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
